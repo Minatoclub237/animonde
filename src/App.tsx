@@ -27,7 +27,7 @@ export default function App() {
         loop
         playsInline
         className="absolute h-full w-full object-cover [object-position:70%_center]"
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4"
+        src="/media/hero.mp4"
       />
 
       {/* Navbar */}
