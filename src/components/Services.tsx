@@ -84,7 +84,7 @@ export default function Services() {
           {SERVICES.map((service) => (
             <div
               key={service.title}
-              className="liquid-glass flex min-h-[320px] flex-col rounded-[1.25rem] p-6"
+              className="liquid-glass flex flex-col rounded-[1.25rem] p-6 md:min-h-[320px]"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="liquid-glass flex h-11 w-11 shrink-0 items-center justify-center rounded-[0.75rem] text-white">
@@ -102,7 +102,7 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="flex-1" />
+              <div className="h-7 md:h-auto md:flex-1" />
 
               <div>
                 <h3 className="font-heading italic text-3xl leading-none tracking-[-1px] text-white">
