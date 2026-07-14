@@ -65,7 +65,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" className="sticky top-0 min-h-screen overflow-hidden bg-black">
+    <section id="services" className="relative min-h-screen overflow-hidden bg-black md:sticky md:top-0">
       <FadingVideo
         src="/media/fish-reef.mp4"
         className="absolute inset-0 z-0 h-full w-full object-cover"
