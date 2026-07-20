@@ -6,7 +6,6 @@ const REALISATIONS = [
   { src: '/media/realisations/vivier-restaurant.webp', label: 'Vivier professionnel restaurant' },
   { src: '/media/realisations/vivier-poissonnerie.webp', label: 'Vivier poissonnerie' },
   { src: '/media/realisations/avant-apres.webp', label: 'Avant / Après (diptyque)' },
-  { src: '/media/realisations/technicien-intervention.webp', label: 'Technicien en intervention' },
   { src: '/media/realisations/installation-entreprise.webp', label: 'Installation sur-mesure entreprise' },
 ]
 
