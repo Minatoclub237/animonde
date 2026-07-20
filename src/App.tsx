@@ -123,9 +123,7 @@ export default function App() {
           <h1 className="text-3xl font-medium leading-[1.1] tracking-tight text-white animate-[fadeSlideUp_0.8s_ease_0.4s_both] sm:text-5xl md:text-6xl lg:text-7xl">
             Installation et entretien
             <br />
-            pour particuliers
-            <br />
-            et professionnels.
+            des aquariums
           </h1>
         </div>
 
