@@ -129,7 +129,8 @@ export default function Contact() {
           <FadeUp delay={0.25}>
             <form
               onSubmit={handleSubmit}
-              className="liquid-glass flex flex-col rounded-[1.25rem] p-6"
+              className="liquid-glass-strong flex flex-col rounded-[1.25rem] p-6"
+              style={{ backgroundColor: 'rgba(4, 12, 20, 0.55)' }}
             >
               {/* Top row : icône + toggle profil, comme icône + tags des cartes */}
               <div className="flex items-start justify-between gap-4">
@@ -142,10 +143,10 @@ export default function Contact() {
                       key={p}
                       type="button"
                       onClick={() => setProfil(p)}
-                      className={`whitespace-nowrap rounded-full px-3 py-1 font-body text-[11px] transition-colors ${
+                      className={`whitespace-nowrap rounded-full px-3 py-1 font-body text-[11px] font-semibold transition-colors ${
                         profil === p
                           ? 'bg-white text-black'
-                          : 'liquid-glass text-white/90 hover:text-white'
+                          : 'border border-white/60 bg-black/50 text-white hover:bg-black/70'
                       }`}
                     >
                       {p}
@@ -157,42 +158,42 @@ export default function Contact() {
               <h3 className="mt-8 font-heading italic text-3xl leading-none tracking-[-1px] text-white md:text-4xl">
                 Demandez votre devis gratuit
               </h3>
-              <p className="mt-3 font-body text-sm font-light leading-snug text-white/90">
+              <p className="mt-3 font-body text-sm leading-snug text-white">
                 Décrivez votre projet — nous vous rappelons sous 24 h ouvrées.
               </p>
 
               <div className="mt-8 space-y-7 font-body">
                 <label className="block">
-                  <span className="text-[11px] uppercase tracking-[0.2em] text-white/50">Votre nom</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white">Votre nom</span>
                   <input
                     type="text"
                     required
                     value={nom}
                     onChange={(e) => setNom(e.target.value)}
                     placeholder="Jean Dupont"
-                    className="mt-2 w-full border-b border-white/25 bg-transparent pb-2.5 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
+                    className="mt-2 w-full border-b border-white/50 bg-transparent pb-2.5 font-medium text-white outline-none transition-colors placeholder:text-white/60 focus:border-white"
                   />
                 </label>
                 <label className="block">
-                  <span className="text-[11px] uppercase tracking-[0.2em] text-white/50">Téléphone ou email</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white">Téléphone ou email</span>
                   <input
                     type="text"
                     required
                     value={coord}
                     onChange={(e) => setCoord(e.target.value)}
                     placeholder="06 12 34 56 78"
-                    className="mt-2 w-full border-b border-white/25 bg-transparent pb-2.5 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
+                    className="mt-2 w-full border-b border-white/50 bg-transparent pb-2.5 font-medium text-white outline-none transition-colors placeholder:text-white/60 focus:border-white"
                   />
                 </label>
                 <label className="block">
-                  <span className="text-[11px] uppercase tracking-[0.2em] text-white/50">Votre projet</span>
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white">Votre projet</span>
                   <textarea
                     required
                     rows={3}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Aquarium récifal 400 L dans mon salon, vivier pour mon restaurant…"
-                    className="mt-2 w-full resize-none border-b border-white/25 bg-transparent pb-2.5 text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"
+                    className="mt-2 w-full resize-none border-b border-white/50 bg-transparent pb-2.5 font-medium text-white outline-none transition-colors placeholder:text-white/60 focus:border-white"
                   />
                 </label>
               </div>
