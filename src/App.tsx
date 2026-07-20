@@ -142,14 +142,14 @@ export default function App() {
       </div>
       </section>
 
-      <Ticker />
-
       {/* Nos services reste épinglée pendant que Réalisations la recouvre,
           puis les deux défilent normalement — la FAQ n'est jamais superposée */}
       <div className="relative">
         <Services />
         <Realisations />
       </div>
+
+      <Ticker />
 
       <FaqSection />
 
